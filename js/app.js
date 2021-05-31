@@ -8,7 +8,7 @@ let seattle={
     avg:6.3,
     customer:[],
     cookies:[],
-    total:null,
+    total:0,
     workingHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     updatingTheCookies:function(){
         // in order to have a randomValue between two numbers
@@ -16,7 +16,8 @@ let seattle={
         for(let i=0;i<this.workingHours.length;i++){
             let cookies=Math.floor(this.customer[i]*this.avg)
             console.log(cookies)
-            this.cookies.push(cookies)
+            this.cookies.push(cookies);
+            this.total=this.total+this.cookies[i];
         }
      },
     
@@ -48,8 +49,11 @@ render:function(){
         ulEl.appendChild(liEl)
         liEl.textContent=`${this.workingHours[i]}:${this.cookies[i]}cookies`
     }
+    let totalLi=document.createElement('li');
+    ulEl.appendChild(totalLi);
+    totalLi.textContent=`Total:${this.total}cookies`;
 }
-}
+};
 
 seattle.updatingTheCustomers();
 seattle.updatingTheCookies();
@@ -64,14 +68,16 @@ let Tokyo={
     avg:1.2,
     customer:[],
     cookies:[],
+    total:0,
     workingHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     updatingTheCookies:function(){
         
         
         for(let i=0;i<this.workingHours.length;i++){
             let cookies=Math.floor(this.customer[i]*this.avg)
-            console.log(cookies)
-            this.cookies.push(cookies)
+            console.log(cookies);
+            this.cookies.push(cookies);
+            this.total=this.total+this.cookies[i];
         }
     },
   
@@ -96,8 +102,11 @@ render:function(){
         ulEl.appendChild(liEl)
         liEl.textContent=`${this.workingHours[i]}:${this.cookies[i]}cookies`
     }
+    let totalLi=document.createElement('li');
+    ulEl.appendChild(totalLi);
+    totalLi.textContent=`Total:${this.total}cookies`;
 }
-}
+};
 
 Tokyo.updatingTheCustomers();
 Tokyo.updatingTheCookies();
@@ -110,6 +119,7 @@ let Dubai={
     avg:3.7,
     customer:[],
     cookies:[],
+    total:0,
     workingHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     updatingTheCookies:function(){
         // in order to have a randomValue between two numbers
@@ -118,6 +128,7 @@ let Dubai={
             let cookies=Math.floor(this.customer[i]*this.avg)
             console.log(cookies)
             this.cookies.push(cookies)
+            this.total=this.total+this.cookies[i];
         }
     },
   
@@ -142,8 +153,11 @@ render:function(){
         ulEl.appendChild(liEl)
         liEl.textContent=`${this.workingHours[i]}:${this.cookies[i]}cookies`
     }
-}
-}
+    let totalLi=document.createElement('li');
+    ulEl.appendChild(totalLi);
+    totalLi.textContent=`Total:${this.total}cookies`;
+},
+};
 
 Dubai.updatingTheCustomers();
 Dubai.updatingTheCookies();
@@ -156,6 +170,7 @@ let Paris={
     avg:2.3,
     customer:[],
     cookies:[],
+    total:0,
     workingHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     updatingTheCookies:function(){
         // in order to have a randomValue between two numbers
@@ -165,6 +180,7 @@ let Paris={
             score+=this.updatingTheCookies
             console.log(cookies)
             this.cookies.push(cookies)
+            this.total=this.total+this.cookies[i];
         }
     },
   
@@ -189,8 +205,11 @@ render:function(){
         ulEl.appendChild(liEl)
         liEl.textContent=`${this.workingHours[i]}:${this.cookies[i]}cookies`
     }
-}
-}
+    let totalLi=document.createElement('li');
+    ulEl.appendChild(totalLi);
+    totalLi.textContent=`Total:${this.total}cookies`;
+},
+};
 
 Paris.updatingTheCustomers();
 Paris.updatingTheCookies();
@@ -206,6 +225,7 @@ let lima={
     avg:4.6,
     customer:[],
     cookies:[],
+    total:0,
     workingHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     updatingTheCookies:function(){
         // in order to have a randomValue between two numbers
@@ -215,6 +235,7 @@ let lima={
             score+=this.updatingTheCookies
             console.log(cookies)
             this.cookies.push(cookies)
+            this.total=this.total+this.cookies[i];
         }
     },
   
@@ -239,8 +260,11 @@ render:function(){
         ulEl.appendChild(liEl)
         liEl.textContent=`${this.workingHours[i]}:${this.cookies[i]}cookies`
     }
-}
-}
+    let totalLi=document.createElement('li');
+    ulEl.appendChild(totalLi);
+    totalLi.textContent=`Total:${this.total}cookies`;
+},
+};
 
 lima.updatingTheCustomers();
 lima.updatingTheCookies();
