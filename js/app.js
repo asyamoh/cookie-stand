@@ -45,6 +45,7 @@ container.appendChild(table);
 //
 let workingHours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00am', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 let shops = [];
+let branchs=[];
 //
 function Shop(location, min, max, avgCookies) {
   this.Location = location;
@@ -139,3 +140,58 @@ dubai.render();
 paris.render();
 lima.render();
 creatingFooterRow();
+
+//the forms:
+
+const form= document.getElementById('newbranchform');
+form.addEventListener('submit',handleSubmiiting);
+function handleSubmiiting(event){
+  event.preventDefault();
+  console.log(event);
+
+
+let nlocation = event.target.location.value;
+let min = event.target.min.value;
+let max = event.target.max.value;
+let avg=event.target.avg.value;
+
+
+let newlocation = new Shop (nlocation,min,max,avg);
+newlocation.calc();
+}
+
+//neww shop: 
+
+Shop.prototype.calc=function(){
+  this.randomCust();
+  this.cookiesHourly();
+  this.render();}
+
+
+
+function final(){
+  let last=document.createElement('tr');
+  table.appendChild(last);
+  let tableData=document.createElement('th');
+  last.appendChild(tableData);
+  tableData.textContent='Totals';
+  let cookiesForAll=0;
+  for(let i=0;i<workingHours.length;i++){
+    let totalAtOneHour=0;
+    for(let j=0;j<branchs.length;j++){
+      totalAtOneHour=totalAtOneHour+branchs[j].cookisPerHour[i];
+    }
+    tableData=document.createElement('td');
+    last.appendChild(tableData);
+    tableData.textContent=totalAtOneHour;
+    cookiesForAll=cookiesForAll+totalAtOneHour;
+  }
+  let lastData=document.createElement('td');
+  last.appendChild(lastData);
+  lastData.textContent=cookiesForAll;
+}
+final();
+
+
+
+
