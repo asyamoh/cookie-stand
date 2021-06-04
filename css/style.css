@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 header h1{
 text-align: center;
@@ -42,3 +43,29 @@ a{
 }
 
 
+=======
+ header h1{
+     color: crimson;
+     background-color: darkgrey;
+
+ }
+ header a{
+ color: darksalmon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+ }
+
+ main ul h1{
+     color: crimson;
+     background-color: darkkhaki;
+ }
+ header h2 {
+     color: crimson;
+     background-color: grey;
+ }
+
+ footer{
+     color: red;
+     
+ }
+>>>>>>> ab78ee0f01bf4ce909c2407880421fc2106c8092
