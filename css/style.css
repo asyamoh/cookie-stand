@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 header h1{
 text-align: center;
 }
@@ -65,7 +65,12 @@ a{
  }
 
  footer{
-     color: red;
+     color: rgb(94, 31, 31);
      
  }
+
+ header{
+     font-family: 'Pacifico', cursive;;
+ }
+
 
