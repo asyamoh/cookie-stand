@@ -1,6 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#contenir{
+    width: 50% ;
+    padding: 0%;
+    margin: 0%;
+}
+header h1{
+text-align: center;
+margin-top: 2%;
+padding-top:2%;
+}
+ 
+ main{ 
+     background-image: url(https://www.pngkey.com/png/full/33-337306_cookie-png-half-cookie-png.png); 
+/* height: 50%;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+ }  
+button{
+    padding:2.5%;
+   margin-left: 20%;
+   color: wheat;
+   background-color: rgb(145, 65, 36);
+  width: 20%;
+}
+
+
+#img{
+padding-left: 90%; 
+margin: 0%;
+}
+
+header{
+    background-color: rgb(117, 25, 25);
+}
+footer{
+    background-color: burlywood;
+    text-align: center;
+    padding-bottom:0%;
+    padding-top:1%;
+    color: wheat;
+}
+footer li{
+    padding-left: 70%;
+    margin-left: 10%;
+}
+a{
+    color: wheat;
+}
+
+
+
  header h1{
-     color: crimson;
-     background-color: darkgrey;
+     color: black;
+    
 
  }
  header a{
@@ -11,14 +66,16 @@
 
  main ul h1{
      color: crimson;
-     background-color: darkkhaki;
+
  }
  header h2 {
-     color: crimson;
+     color: rgb(112, 21, 21);
+
      background-color: grey;
  }
 
  footer{
-     color: red;
+     color: rgb(94, 31, 31);
      
  }
+
