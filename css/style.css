@@ -93,3 +93,6 @@ a{
     font-family: 'Anton', sans-serif;
  }
 
+footer nav{
+    display: inline-block;
+}
