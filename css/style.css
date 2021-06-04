@@ -45,8 +45,8 @@ a{
 
 
  header h1{
-     color: crimson;
-     background-color: darkgrey;
+     color: black;
+    
 
  }
  header a{
@@ -57,10 +57,11 @@ a{
 
  main ul h1{
      color: crimson;
-     background-color: darkkhaki;
+
  }
  header h2 {
-     color: crimson;
+     color: rgb(112, 21, 21);
+
      background-color: grey;
  }
 
