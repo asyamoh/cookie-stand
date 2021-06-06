@@ -96,3 +96,29 @@ a{
 footer nav{
     display: inline-block;
 }
+
+able, th, td{
+    text-align: center;
+    border: solid rgb(168, 176, 235) 1px;
+    border-collapse: collapse;
+    background-color: rgb(210, 203, 243);
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(112, 21, 21);
+    font-family: 'Geneva';
+}
+
+#salesbody{
+    background-color: rgb(243, 243, 243);
+}
+#salesheader{
+    background-color: rgb(225, 205, 235);
+    height: 100px;
+}
+#salesheader nav{
+    padding-top: 40px;
+    
+}
